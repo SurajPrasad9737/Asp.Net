@@ -1,0 +1,142 @@
+﻿<%@ Master Language="VB" CodeFile="GuestMasterPage.master.vb" Inherits="GuestMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 1000px;
+            border: 2px solid #008000;
+        }
+        .style2
+        {
+            width: 100%;
+            border: 2px solid #FF0000;
+        }
+        .style3
+        {
+            width: 100%;
+            border: 2px solid #0000FF;
+        }
+        .style4
+        {
+            width: 100%;
+            border: 2px solid #800080;
+        }
+        .style5
+        {
+            height: 26px;
+        }
+        .style6
+        {
+            width: 100%;
+            border: 2px solid #800000;
+        }
+        .style7
+        {
+            width: 151px;
+        }
+        .style8
+        {
+            width: 208px;
+        }
+        .style9
+        {
+            width: 253px;
+        }
+        .style10
+        {
+            width: 141px;
+            height: 315px;
+        }
+        .style11
+        {
+            height: 227px;
+        }
+        .style12
+        {
+            height: 315px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1" align="center">
+            <tr>
+                <td align="center">
+                    <table class="style2">
+                        <tr>
+                            <td align="left" class="style7">
+                                <asp:Image ID="Image1" runat="server" Height="200px" 
+                                    ImageUrl="~/Images/Logo.png" Width="200px" />
+                            </td>
+                            <td align="left">
+                                <asp:Image ID="Image2" runat="server" Height="200px" 
+                                    ImageUrl="~/Images/Banner.png" Width="800px" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="style11">
+                    <table class="style3">
+                        <tr>
+                            <td align="left" class="style8">
+                                <asp:AdRotator ID="AdRotator1" runat="server" Height="200px" Width="200px" 
+                                    AdvertisementFile="~/Ads.xml" />
+                            </td>
+                            <td align="left" class="style9">
+                                <asp:Calendar ID="Calendar1" runat="server" Height="200px" Width="200px">
+                                </asp:Calendar>
+                            </td>
+                            <td align="center">
+                                <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                                </asp:SiteMapPath>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <table class="style4">
+                        <tr>
+                            <td align="left" class="style10" style="border: thin double #FF0000" 
+                                valign="top">
+                                <asp:TreeView ID="TreeView1" runat="server" Width="199px" 
+                                    DataSourceID="SiteMapDataSource1" Font-Size="16pt" Height="196px" 
+                                    ShowLines="True">
+                                </asp:TreeView>
+                                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                            </td>
+                            <td align="left" style="border: thin double #FF0000" valign="top" 
+                                class="style12" width="800">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="style5">
+                    <table class="style6">
+                        <tr>
+                            <td align="center" style="background-color: #FFCC66" valign="bottom">
+                                &copy; Copyright reserved (Suraj kumar)</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

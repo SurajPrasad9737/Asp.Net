@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/Images/to-learn-2001838_1280.jpg</ImageUrl>
+    <NavigateUrl>http://codewithharry.com</NavigateUrl>
+    <AlternateText>Code With Harry</AlternateText>
+    <Keywords>Coding</Keywords>
+    <Impressions>1</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Images/web-design-3411373_1280.jpg</ImageUrl>
+    <NavigateUrl>http://apnacollege.com</NavigateUrl>
+    <AlternateText>Apna College</AlternateText>
+    <Keywords>Web Designs</Keywords>
+    <Impressions>2</Impressions>
+  </Ad>
+</Advertisements>

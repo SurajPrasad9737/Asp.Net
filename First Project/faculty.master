@@ -1,0 +1,72 @@
+﻿<%@ Master Language="VB" CodeFile="faculty.master.vb" Inherits="faculty" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 1000px;
+            border-style: solid;
+            border-width: 2px;
+        }
+        .style2
+        {
+            width: 990px;
+        }
+        .style3
+        {
+            width: 990px;
+            height: 26px;
+        }
+        .style4
+        {
+            width: 100%;
+            border-style: solid;
+            border-width: 1px;
+        }
+        .style5
+        {
+            width: 158px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1" align="center">
+            <tr>
+                <td align="center" bgcolor="#FFFF99" class="style2" 
+                    style="font-family: Calibri; font-size: 70px; font-weight: bolder; font-style: normal; font-variant: normal; text-transform: capitalize; color: #800000; text-decoration: underline">
+                    Faculty Home Area</td>
+            </tr>
+            <tr>
+                <td class="style2" bgcolor="#FFFFCC">
+                    <table class="style4">
+                        <tr>
+                            <td align="left" class="style5" height="300px" valign="top">
+                                <asp:Menu ID="Menu1" runat="server">
+                                </asp:Menu>
+                            </td>
+                            <td valign="top">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="style3" align="center" 
+                    style="font-family: Calibri; font-size: 17px; color: #800000; font-weight: bold;">
+                    &copy; Copyrights Suraj Kumar(Reserved)</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

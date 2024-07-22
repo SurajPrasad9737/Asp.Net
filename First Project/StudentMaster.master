@@ -1,0 +1,79 @@
+﻿<%@ Master Language="VB" CodeFile="StudentMaster.master.vb" Inherits="StudentMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 1000px;
+            border: 2px solid #800000;
+        }
+        .style2
+        {
+            width: 100%;
+            border: 1px solid #FF0000;
+        }
+        .style3
+        {
+            width: 173px;
+            height: 417px;
+        }
+        .style4
+        {
+            height: 417px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1" align="center">
+            <tr>
+                <td align="center" 
+                    
+                    style="font-family: &quot;Arial Black&quot;; font-size: 70px; text-decoration: underline; color: #0000FF; text-transform: uppercase;" 
+                    valign="bottom">
+                    Student&#39;s Home Area</td>
+            </tr>
+            <tr>
+                <td align="left" valign="top">
+                    <table class="style2">
+                        <tr>
+                            <td bgcolor="#CCCCCC" class="style3" valign="top">
+                                <asp:LinkButton ID="Lbtn" runat="server">Logout</asp:LinkButton>
+                                <br />
+                                <asp:ImageButton ID="idbtnHome" runat="server" Height="50px" 
+                                    ImageUrl="~/Images/to-learn-2001838_1280.jpg" Width="100px" />
+                                <br />
+                                <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" 
+                                    NavigateUrl="~/ListOfCourses.aspx" Target="_blank">List of Courses</asp:HyperLink>
+                                <br />
+                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Subjects.aspx" 
+                                    Target="_blank">Subjects</asp:HyperLink>
+                                <br />
+                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/UploadImage.aspx">Upload Photos</asp:HyperLink>
+                            </td>
+                            <td class="style4" valign="top">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" 
+                    style="font-family: 'Bahnschrift Light SemiCondensed'; font-weight: bolder; background-color: #FFCCCC;" 
+                    valign="bottom">
+                    © copyright reserved Suraj Kumar&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
